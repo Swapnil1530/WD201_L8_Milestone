@@ -1,9 +1,9 @@
 {
   "development": {
-    "username": "yjuvzxchuzxghx",
-    "password": "a2789461b37d9e262bd91b5537f5fd431259ea7dfeed443cd4bc8e0fcd14ea2c",
-    "database": "dflqqf5m73sju8",
-    "host": "ec2-54-173-237-110.compute-1.amazonaws.com",
+    "username": "postgres",
+    "password": "Swapnil@1530",
+    "database": "todos",
+    "host": "127.0.0.1",
     "dialect": "postgres"
   },
   "test": {
