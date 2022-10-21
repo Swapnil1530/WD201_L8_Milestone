@@ -6,13 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./css/style.css" rel="stylesheet" type="text/css">
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>ejs</title>
 </head>
 
 <body>
-  <%- include('header.ejs') %>
-    <%- include('todos.ejs') %>
-      <%- include('fotter.ejs') %>
+
+  <div class="w-full rounded  p-8 md:max-w-sm md:mx-auto">
+    <%- include('header.ejs') %>
+      <form class="flex mb-4 md:justify-between ">
+        <div class="flex flex-col mb-4 md:w-1/2 ">
+          <input class="border border-lime-400 leading-relaxed rounded py-1.5 px-3 text-grey-darkest md:mr-2 "
+            placeholder="Enter Todo" type="text" required>
+        </div>
+        <div class="flex flex-col mb-4 md:w-1/2 ">
+          <input class="border border-lime-400 rounded py-1.5 px-3 text-grey-darkest md:ml-2" type="date" required>
+        </div>
+        <div class="flex-none">
+          <button class="ml-5 px-5 py-1.5 bg-green-600  text-white uppercase text-lg p-1.5 rounded"
+            type="submit">add</button>
+        </div>
+      </form>
+      <%- include('todos.ejs') %>
 
 </body>
 
